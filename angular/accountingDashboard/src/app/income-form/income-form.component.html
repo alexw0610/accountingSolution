@@ -1,0 +1,26 @@
+<div class="jumpotron container">
+	<div class="card-deck m-2" align="center">
+		<div class="card">
+		  <div class="card-body">
+			<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+				<h3>Add income</h3>
+				<div>
+					<label for="amount">
+					  Amount
+					</label>
+					<input id="amount" type="number" min="0" formControlName="amount">
+				</div>
+
+				<div>
+					<label for="address">
+					  Reoccurring
+					</label>
+					<input id="reoccurring" type="checkbox" default="false" formControlName="reoccurring">
+				</div>
+				<button (click)="cancel()" class="btn btn-secondary">Cancel</button>
+				<button class="btn btn-success" type="submit">Add</button>
+			</form>
+		  </div>
+		</div>
+	</div>
+</div>

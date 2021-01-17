@@ -1,0 +1,4 @@
+<app-graph #graph></app-graph>
+<router-outlet (deactivate) = "graph.updateGraphData($event);list.updateListData($event)"></router-outlet> 
+<app-root (shareDataEvent) = "graph.updateGraphData($event)" #list> </app-root>
+
