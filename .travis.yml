@@ -1,3 +1,4 @@
+--- 
+before_script: "cd java/springREST"
 language: java
-before_script: cd java/springREST
-mvn clean test
+script: "mvn clean test"
